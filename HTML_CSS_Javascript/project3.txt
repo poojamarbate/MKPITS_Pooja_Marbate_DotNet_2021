@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,8 +10,10 @@
 
 </body>
 </html>
-=======
-Happy Birthday
 
+
+Output
+
+Happy Birthday
 BIRTHDAY CAKE
->>>>>>> 8c63dd90514af448132d210f7cc18863bcc5e580
+
