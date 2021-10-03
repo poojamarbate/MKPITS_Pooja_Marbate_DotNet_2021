@@ -1,9 +1,7 @@
-<<<<<<< HEAD
-this is second line 
-this is third line
-this is last line
-=======
 this is first line
+this is second line
+this is third line
 this is fourth line
 this is one more line
->>>>>>> 266e96e4f7b08cf5741dd6453ba3dff7f8c0aff5
+this is last line
+
