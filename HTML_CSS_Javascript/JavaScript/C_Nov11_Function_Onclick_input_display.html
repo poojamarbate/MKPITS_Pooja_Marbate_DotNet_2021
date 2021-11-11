@@ -1,0 +1,64 @@
+<html>
+    <head></head>
+    <body>
+    
+       
+        <form>
+            <table width="300px"><caption>Arithmatic Operation</caption>
+
+                <tr><td>Number1<input type="text" id="a"></td></tr>
+
+                <tr><td>Number2<input type="text" id="b"></td></tr>
+                 
+                <tr></tr>
+             
+                <tr>
+                 <td><input type="button" value="Add" onclick="Add()"></td>
+                 <td><input type="button" value="Sub" onclick="Sub()"></td>
+                 <td><input type="button" value="Mult" onclick="Mult()"></td>
+                 <td><input type="button" value="Div" onclick="Div()"></td>
+                 <td><input type="button" value="Mod" onclick="Mod()"></td>
+                </tr>
+            </table>
+        </form>
+        
+        <script>
+
+            function Add()
+            {
+              A=parseInt(document.getElementById("a").value);
+              B=document.getElementById("b").value;
+              B=parseInt(B)
+              alert(A+B)
+            }
+            function Sub()
+            {
+                A=parseInt(document.getElementById("a").value);
+              B=document.getElementById("b").value;
+              B=parseInt(B)
+              alert(A-B)
+            }
+            function Mult()
+            {
+                A=parseInt(document.getElementById("a").value);
+              B=document.getElementById("b").value;
+              B=parseInt(B)
+              alert(A*B)
+            }
+            function Div()
+            {
+                A=parseInt(document.getElementById("a").value);
+              B=document.getElementById("b").value;
+              B=parseInt(B)
+              alert(A/B)
+            }
+            function Mod()
+            {
+                A=parseInt(document.getElementById("a").value);
+              B=document.getElementById("b").value;
+              B=parseInt(B)
+              alert(A%B)   
+            }
+        </script>
+    </body>
+</html>

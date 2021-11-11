@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="A"></h1>
+        <h1 id="B"></h1>
+        <h1 id="C"></h1>
+        <h1 id="D"></h1>
+        <form>
+            <table><caption>Arithmatic Operation</caption>
+             <tr>
+                 <td><input type="button" value="Add" onclick="Add(20,30)"></input> </td>
+                 <td><input type="button" value="Sub" onclick="Sub(30,10)"></td>
+                 <td><input type="button" value="Mult" onclick="Mult(30,30)"></td>
+                 <td><input type="button" value="Div" onclick="Div(50,5)"></td>
+                 <td><input type="button" value="Mod" onclick="Mod(30,2)"></td>
+             </tr>
+
+             
+
+
+            </table>
+        </form>
+        
+        <script>
+            
+            function Add(a,b)
+            {
+               alert("Addition = "+(a+b));
+            }
+            function Sub(a,b)
+            {
+               alert("Sub = "+(a-b));
+            }
+            function Mult(a,b)
+            {
+                alert("Mult = "+(a*b));
+            }
+            function Div(a,b)
+            {
+                alert("Div = "+(a/b));
+            }
+            function Mod(a,b)
+            {
+                alert("Mod = "+(a%b));
+            }
+        </script>
+    </body>
+</html>

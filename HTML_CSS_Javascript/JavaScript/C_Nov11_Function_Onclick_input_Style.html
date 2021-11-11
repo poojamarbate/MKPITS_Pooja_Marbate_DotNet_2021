@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <style>
+            button{
+                margin:10px 10px 10px 10px ;
+                padding: 20px 20px 20px 20px ;
+                height: 40px;
+                width: 40px;
+            }
+            td{
+                height: 40px;
+                width: 40px;
+            }
+        </style>
+    </head>
+    <body bgcolor="sky blue">
+    <center> 
+    <h1>Arithmatic Operation</h1>
+    <br><br
+       
+        <form>
+            <table border="2" width=200px height=200px bgcolor=black ><caption><i><strong>Arithmatic Operation</strong></i></caption>
+                <tr>
+                 <td align="center"><input type="button" value="+" onclick="Add(a,b)"></td>
+                </tr>
+
+                <tr>
+                  <td align="center"><input type="button" value="-" onclick="Sub(a,b)"></td>
+                </tr> 
+
+              
+                <tr>
+                <td align="center"><input type="button" value="*" onclick="Mult(a,b)"></td>
+                </tr>  
+
+                 <tr>    
+                 <td align="center"><input type="button" value="/" onclick="Div(a,b)"></td>
+                 </tr>
+                
+                 <tr>
+                 <td align="center"><input type="button" value="%" onclick="Mod(a,b)"></td>
+                 </tr>
+            </table>
+        </form>
+        </center>
+        
+        <script>
+            a=parseInt(prompt("Enter first number","1"));
+            b=parseInt(prompt("Enter second number","1"));
+            function Add(a,b)
+            {
+               alert("Addition = "+(a+b));
+            }
+            function Sub(a,b)
+            {
+               alert("Sub = "+(a-b));
+            }
+            function Mult(a,b)
+            {
+                alert("Mult = "+(a*b));
+            }
+            function Div(a,b)
+            {
+                alert("Div = "+(a/b));
+            }
+            function Mod(a,b)
+            {
+                alert("Mod = "+(a%b));
+            }
+        </script>
+    </body>
+</html>

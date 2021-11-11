@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <h1 id="A"></h1>
+        <h1 id="B"></h1>
+        <h1 id="C"></h1>
+        <h1 id="D"></h1>
+        <script>
+            document.getElementById("A").innerHTML=" Addition = "+Add(10,20);
+            document.getElementById("B").innerHTML="Sub = "+Sub(30,10);
+            document.getElementById("C").innerHTML="Multi  = "+Mult(30,10);
+            document.getElementById("D").innerHTML="Div = "+Div(30,10);
+            
+            
+            function Add(a,b)
+            {
+                return a+b;
+            }
+            function Sub(a,b)
+            {
+                return a-b;
+            }
+            function Mult(a,b)
+            {
+                return a*b;
+            }
+            function Div(a,b)
+            {
+                return a/b;
+            }
+            function Mod(a,b)
+            {
+                return a%b;
+            }
+        </script>
+    </body>
+</html>
