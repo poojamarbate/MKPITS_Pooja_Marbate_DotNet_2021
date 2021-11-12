@@ -18,8 +18,8 @@
                 </tr>
 
                 <tr>
-                    <td align="center"><input type="radio" id="g1" name="r" value="male">male </td>
-                    <td align="center"><input type="radio" id="g2" name="r" value="female">female</td>
+                    <td align="center"><input type="radio" id="g1" name="gender" value="male">male </td>
+                    <td align="center"><input type="radio" id="g2" name="gender" value="female">female</td>
                     
                 </tr>
                 <tr>
@@ -35,8 +35,11 @@
             {
                 firstname=document.getElementById("fname").value;
                 lastname=document.getElementById("lname").value;
-                gender=document.getElementById("g1").value;
-                alert(firstname+" " +lastname +" "+gender );
+                if(document.getElementById("g1").checked==true)
+                saluation ="Mr."
+                else
+                saluation="Ms."
+                alert(saluation + firstname+" " +lastname );
             }
         </script>
     </body>

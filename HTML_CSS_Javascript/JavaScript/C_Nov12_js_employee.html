@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo">
+            Real life Object Example
+        </p>
+        <script>
+            const empolyee = {
+                FirstName:"Harry",//sky blue for property name
+                LastName:"Potter",
+                salary:37000,
+                fullname :function()//light yellow color shows function name
+                {
+                    return this.FirstName+" "+this.LastName;
+                }
+            };
+            document.getElementById("demo").innerHTML=" Employee full Name "+empolyee.fullname() +" salary "+empolyee.salary;
+            
+        </script>
+    </body>
+</html>

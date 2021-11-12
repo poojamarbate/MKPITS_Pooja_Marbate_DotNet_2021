@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo">
+            Real life Object Example
+        </p>
+        <button onclick="this.innerHTML = Date()">The time is ?</button>
+        <script>
+            const empolyee = {
+                FirstName:"Harry",//sky blue for property name
+                LastName:"Potter",
+                salary:37000,
+                grosssalary:660,
+                fullname :function()//light yellow color shows function name
+                {
+                    return this.FirstName+" "+this.LastName;
+                },
+                gross :function()
+                {
+                    return this.salary+660+" Rs /-";
+                }
+
+            };
+            document.getElementById("demo").innerHTML=" <b>Employee full Name</b>: "+empolyee.fullname() +"</br>"
+            +"<b> Salary</b>: "+empolyee.salary +" Rs/-"+"</br>"
+            +"<b><u>Gross Salary</u></b> : "+empolyee.gross();
+            
+        </script>
+    </body>
+</html>

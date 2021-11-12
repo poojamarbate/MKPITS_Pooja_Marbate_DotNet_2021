@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+<p>Using new Date(), creates a new date object with the current date and time:</p>
+
+<p id="demo"></p>
+<h3 id="yr"></h3>
+<h3 id ="month"></h3>
+<h3 id="date"></h3>
+<h3 id="hour"></h3>
+<h3 id="min"></h3>
+<h3 id="sec"></h3>
+<h3 id="mili"></h3>
+<h4 id="day"></h4>
+
+
+
+
+<script>
+const d = new Date();  //retrieves system
+
+document.getElementById("demo").innerHTML = "<b>" +d+ "</b>";
+Fullyear=d.getFullYear();
+document.getElementById("yr").innerHTML="year extracted here "+Fullyear;
+document.getElementById("month").innerHTML = d.getMonth() + 1+" Month";
+document.getElementById("date").innerHTML=d.getDate()+" Date ";
+document.getElementById("hour").innerHTML = d.getHours()+" Hours ";
+document.getElementById("min").innerHTML = d.getMinutes()+" Minutes";
+document.getElementById("sec").innerHTML = d.getSeconds()+" Seconds";
+document.getElementById("mili").innerHTML = d.getMilliseconds()+" miliseconds ";
+document.getElementById("day").innerHTML = d.getDay()+" Day";
+
+</script>
+
+</body>
+</html>
