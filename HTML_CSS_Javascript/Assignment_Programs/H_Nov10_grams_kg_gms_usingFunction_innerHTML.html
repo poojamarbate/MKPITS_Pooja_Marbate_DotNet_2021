@@ -1,16 +1,46 @@
 <html>
     <head>
-
+    <style>
+        span{
+            color: blue;
+        }
+    </style>
     </head>
     <body>
-        <p id="demo">Grams gm=2450</p>
-        <script>
-            var Grams=2450;
-            var kg=Grams/1000;
-            var Grams=Grams%1000;
-            console.log(kg);
-            console.log(Grams);
-         
-        </script>
+
+        <h2 style="color: blue;">Weight Converter</h2>
+        <p>Enter a value in the kilograms field to convert :</p>
+  
+
+     <!-- <p>
+        <label>Grams</label>
+        <input id="Grams" type="number" placeholder="Grams"
+        oninput="gramConvert(this.value)"
+        onchange="gramConvert(this.value)">
+      </p>
+
+    -->
+      <p> 
+       <!-- label to input field -->
+       <label>Kilograms</label>
+       <!-- input field to enter a data -->
+       <!-- kiloweightConvert function call function 
+            kiloweightConvert to evaluate value -->
+       <input id="Kilograms" type="number" placeholder="Kilograms"
+       oninput="kiloweightConvert(this.value)"
+       onchange="kiloweightConvert(this.value)">
+
+      </p>
+   <!--output field -->
+   <p>Grams: <span id="Grams"></span></p>
+   <!--<p>Kilograms: <span id="Kilograms"></span></p>-->
+   <script>
+
+       
+       function kiloweightConvert(value)
+       {
+           document.getElementById("Grams").innerHTML=value*1000;
+       }
+   </script>
     </body>
 </html>
