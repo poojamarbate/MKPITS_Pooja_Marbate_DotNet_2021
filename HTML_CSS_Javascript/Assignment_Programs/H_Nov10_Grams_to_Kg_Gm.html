@@ -1,0 +1,22 @@
+<html>
+    <head>
+<p id="demo">Weight </p>
+    </head>
+
+    <body>
+    <p id="demo"></p>
+      <script>
+          var Gram = 2450;
+          function Wconverter()
+          {
+            Kg=Gram/1000;
+            console.log(Kg);
+            Grams=Gram%1000;
+            console.log(Grams);
+          }
+         Wconverter();
+         document.getElementById("demo").innerHTML=" <b> Weight Converted in Grams to Kg gm : </b>  "+Math.round(Kg)+" Kg "+ Grams+" gm ";
+         
+      </script>
+    </body>
+</html>
