@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+         <p>
+             <label>Grams</label>
+             <input id="Grams" type="number" placeholder="Grams"
+             oninput="gramsConvert(this.value)"
+             onchange="gramsConvert(this.value)">
+         </p> 
+         <p>Kilograms:<span id="Kilograms"></span></p>
+
+         <script>
+             function gramsConvert(value)
+             {
+                 document.getElementById("Kilograms").innerHTML= value/1000+" Kg ";
+                 
+             }
+         </script> 
+    </body>
+</html>
