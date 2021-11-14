@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script>
+            function VoterValidity(name,age)
+            {
+                var name=prompt("Enter a Name","rohini sharma");
+                var age=parseInt(prompt("enter a age "));
+                var ans=" You Are Not Eligible ";
+                  if(age>=18)
+                  {
+                      ans=" You Are Eligible ";
+                  }
+                 return name+ans;
+            }
+           var status= VoterValidity()
+            document.write("<b>"+name +status+ " for Vote </b>");
+        </script>
+    </head>
+</html>
