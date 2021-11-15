@@ -1,0 +1,22 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h2 id="demo"></h2>
+        <script>
+            class Product{
+                constructor(proid,proname,proprice,procat)
+                {
+                    this.productId = proid;
+                    this.productName = proname;
+                    this.productPrice = proprice;
+                    this.productCategory = procat;
+                }
+            }
+            const Pro = new Product(1," MAGGI ",216," Instant Noodles");
+            document.getElementById("demo").innerHTML = 
+            Pro.productId + " "+Pro.productName+ " "+Pro.productPrice+ " "+Pro.productCategory;
+        </script>
+    </body>
+</html>
