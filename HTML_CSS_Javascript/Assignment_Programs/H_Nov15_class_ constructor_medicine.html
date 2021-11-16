@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Medicine</title>
+    </head>
+    <body>
+        <h2 id="med"></h2>
+        <script>
+            class Medicine {
+                constructor(MedId,MedName,MedPrice,MedCategory){
+                    this.Id = MedId;
+                    this.Name = MedName;
+                    this.Price = MedPrice;
+                    this.Category = MedCategory;
+
+                }
+            }
+            const Med = new Medicine(1," Abacavir ", 345," Generic ");
+            document.getElementById("med").innerHTML = 
+            Med.Id+" "+Med.Name+" "+Med.Price+" "+ Med.Category;
+        </script>
+    </body>
+</html>
