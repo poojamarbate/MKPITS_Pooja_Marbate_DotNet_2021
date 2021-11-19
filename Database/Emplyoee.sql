@@ -1,7 +1,7 @@
 --drop database myDB;
-create database myDB;
-drop table Employee;
-create table Employee(Id int primary key ,fname varchar(20),lname varchar(20),branch varchar(20),city varchar(20));
+use myDB_SQL;
+--drop table Employee;
+create table Employee(Id int primary key identity(1,1) ,fname varchar(20),lname varchar(20),branch varchar(20),city varchar(20));
 insert into Employee values(1,'Ishant','Sharma','ETC','Dehli');
 insert into Employee values(2,'Krishna','Sharma','ME','Aurangabad');
 insert into Employee values(3,'Shubh','Borkar','EE','indore');

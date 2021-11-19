@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <form>
+        <input type="button" value="total_amount" onclick="total_amount(amount ,tax)">
+        <input type="button" value="tax amount" onclick="total_tax(amount,tax)">
+        </form>
+      
+      <script>
+        var amount=parseInt(prompt("enter the amount"));
+        var tax=prompt("enter perecentage ");
+        
+        function total_amount(amount,tax)
+          {
+           alert("total_amount = "+(amount+amount*(tax/100))) ;
+          }
+
+      function total_tax(amount,tax)
+        {
+            alert("total_tax = "+amount*(tax/100)) ;
+        }
+
+
+      </script>
+
+    </body>
+</html>
