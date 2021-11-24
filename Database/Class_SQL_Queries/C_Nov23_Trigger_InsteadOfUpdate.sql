@@ -1,5 +1,5 @@
 --create trigger on table employee_test for update statement
-create trigger trgInsteadOfUpdate on dbo.employee_test
+alter trigger trgInsteadOfUpdate on dbo.employee_test
 instead of update
 as
 		declare @emp_id int, @emp_name varchar(55),
@@ -26,4 +26,5 @@ as
 			  print 'Record updated -- Instead of Update Trigger .';
 			  end
 			  END
-			  
+			  alter table employee_test_audit add oldSalary int,old_name varchar (30);
+			  truncate table employee_test_audit;
