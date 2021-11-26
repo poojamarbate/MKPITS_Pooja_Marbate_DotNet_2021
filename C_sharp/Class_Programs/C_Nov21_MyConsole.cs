@@ -47,15 +47,6 @@ namespace C_Nov21_MyConsoleApp1
 
             Console.WriteLine("area of circle  = "+Area);
 
-
-
-
-
-
-
-
-
-
             Console.ReadKey();
         }
     }
