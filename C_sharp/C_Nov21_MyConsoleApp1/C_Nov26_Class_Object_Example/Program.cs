@@ -15,7 +15,7 @@ namespace C_Nov26_Class_Object_Example
             //obj.lastname = "Marbate";
             //obj.salary = 35000;
 
-            //Console.WriteLine(obj.firstname+" "+obj.lastname+" "+obj.salary);
+           
             //obj1 = new Employee();
             //obj1.firstname = "Ram";
             //obj1.lastname = "Kapoor";
@@ -34,11 +34,12 @@ namespace C_Nov26_Class_Object_Example
             Date birthday = new Date(5, 6, 1998);
             Console.WriteLine("Pooja's Birthday is : ");
             birthday.Display();
-            Date mybirthday = new Date(26, 8, 80);
+            Date mybirthday = new Date(26, 8, 2004);
             // Console.WriteLine(mybirthday.GetType());
             mybirthday.Display();
 
-
+            Employee obj = new Employee("Ram","Kapoor",40000);
+            obj.Show();
                 
         }
     }

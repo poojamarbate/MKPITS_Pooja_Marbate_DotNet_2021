@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "H_Nov25_FunctionOverloading
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Nov26_Class_Object_Example", "C_Nov26_Class_Object_Example\C_Nov26_Class_Object_Example.csproj", "{A22418B4-E279-4A1E-A096-CBADD17C1790}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Nov26_Class_with_Object_Method", "C_Nov26_Class_with_Object_Method\C_Nov26_Class_with_Object_Method.csproj", "{5247FCC7-8F58-48CA-903D-71263D096868}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A22418B4-E279-4A1E-A096-CBADD17C1790}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22418B4-E279-4A1E-A096-CBADD17C1790}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22418B4-E279-4A1E-A096-CBADD17C1790}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5247FCC7-8F58-48CA-903D-71263D096868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5247FCC7-8F58-48CA-903D-71263D096868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5247FCC7-8F58-48CA-903D-71263D096868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5247FCC7-8F58-48CA-903D-71263D096868}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
