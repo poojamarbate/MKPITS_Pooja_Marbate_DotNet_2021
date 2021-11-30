@@ -44,32 +44,5 @@ namespace C_Nov29_Static_Field_static_Function
             Console.WriteLine("Total number of student Objects = "+count);
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
