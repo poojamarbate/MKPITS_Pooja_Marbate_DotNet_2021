@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="D:\MKPITS\MKPITS_Pooja_Marbate_DotNet_2021\C_sharp\C_Nov21_MyConsoleApp1\C_Nov29_Employee_class_enum.cs" Link="C_Nov29_Employee_class_enum.cs" />
+  </ItemGroup>
+
+</Project>
