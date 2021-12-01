@@ -2,30 +2,28 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace H_Nov26_Class_Medicine
+namespace H_Nov26_Employee_Class
 {
     class Date
     {
         int day, month, year;
-
         public Date()
         {
-            day = 26;
-            month = 9;
+            day = 12;
+            month = 3;
             year = 2021;
         }
-
         public Date(int day,int month,int year)
         {
             this.day = day;
             this.month = month;
             this.year = year;
-
         }
 
         public void Display()
         {
-            Console.WriteLine("Expiry Date : "+day+"/"+month+"/"+year);
+            Console.WriteLine("Date : "+day+"/"+month+"/"+year);
         }
     }
 }
+    

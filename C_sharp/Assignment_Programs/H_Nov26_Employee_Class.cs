@@ -1,51 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace H_Nov29_Employee_Class_Example
+namespace H_Nov26_Employee_Class
 {
-    class Employee
+    class Program
     {
-        public int id { get; set; }
-        public string Fullname { get; set; }
-        public decimal salary { get; set; }
-
-        public static int count { get; set; }
-
-
-        public Employee()
+        static void Main(string[] args)
         {
-            id = 1;
-            Fullname = "Priya Sharma";
-            salary = 15000;
-            count++;
-        }
-        public Employee(int id,string Fullname,decimal salary)
-        {
-            this.id = id;
-            this.Fullname = Fullname;
-            this.salary = salary;
-            count++;
+           Employee e1= new Employee();
+            e1.Show();
+            Gross_Sal(15000);
+
+            Employee e2 = new Employee(102, "Jay Kumar", "Hr", 18000, new Date(12, 5, 2020));
+            e2.Show();
+            Gross_Sal(18000);
+
         }
 
-        public void ShowResult()
+        public static void Gross_Sal(int salary)
         {
-            Console.WriteLine(id+" "+Fullname+" "+salary);
+            Console.WriteLine("Gross Salary : ");
+            Console.WriteLine(salary+666);
         }
 
-        public static void ShowCount()
-        {
-            Console.WriteLine("Totol Employees : "+count);
-        }
-        public decimal GrossSalary()
-        {
-            decimal Gross = salary + salary * 0.75m + salary * 0.1m + 1500;
-            return Gross;
-        }
-        public decimal NetSalary()
-        {
-            decimal Net = GrossSalary() - 768.7m;
-            return Net;
-        }
     }
 }

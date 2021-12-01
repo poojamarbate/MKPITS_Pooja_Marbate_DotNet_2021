@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace H_Nov26_Book_Class
+namespace H_Nov26_Class_Medicine
 {
     class Date
     {
@@ -15,7 +15,7 @@ namespace H_Nov26_Book_Class
             year = 2021;
         }
 
-        public Date(int day, int month, int year)
+        public Date(int day,int month,int year)
         {
             this.day = day;
             this.month = month;
@@ -25,7 +25,7 @@ namespace H_Nov26_Book_Class
 
         public void Display()
         {
-            Console.WriteLine("Published Date : " + day + "/" + month + "/" + year);
+            Console.WriteLine("Expiry Date : "+day+"/"+month+"/"+year);
         }
     }
 }
