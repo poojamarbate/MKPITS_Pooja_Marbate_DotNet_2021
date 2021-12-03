@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Sys5tem;
 
 namespace C_Dec1_Inheritance_Example
 {
@@ -6,11 +6,14 @@ namespace C_Dec1_Inheritance_Example
     {
         static void Main(string[] args)
         {
-            Mother m = new Mother();
-            Console.WriteLine(m.ToString());
+            //Mother m = new Mother();
+            //Console.WriteLine(m.ToString());
 
-            Daughter d = new Daughter(12, "Rani", 40, "Rajvi");
-            Console.WriteLine(d.ToString());
+            //Daughter d = new Daughter(12, "Rani", 40, "Rajvi");
+            //Console.WriteLine(d.ToString());
+
+            Employee e = new Employee();
+            e.GrossSalary();
         }
     }
 }
