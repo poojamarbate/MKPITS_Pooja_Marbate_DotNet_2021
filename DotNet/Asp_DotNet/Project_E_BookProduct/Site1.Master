@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Project_E_BookProduct.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body{
+          background-color:ghostwhite;
+       }
+       header{
+           text-align:center;
+       }
+       footer{
+           text-align:center;
+       }
+      
+        .auto-style1 {
+            width: 100px;
+            background-color: #C0C0C0;
+        }
+      
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+       <header id="header">
+           <h1> 
+               <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="50px" Font-Underline="False" Text="E_Library"></asp:Label>
+           </h1>
+           <br />
+           <asp:Image ID="Image1" runat="server" Height="289px" ImageUrl="~/Images/b5.jpg" Width="1122px" />
+        
+           <br />
+           <br />
+           <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="25px" ForeColor="Blue" Text="&quot;Reading gives us someplace to go "></asp:Label>
+           <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" Font-Size="25px" ForeColor="Blue" Text="when we have to stay where we are&quot;."></asp:Label>
+        
+       </header>
+
+        <br />
+        <table class="auto-style1">
+            <tr>
+                <td colspan="3">
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+        <br />
+       
+        <footer id="footer">
+
+            <asp:Label ID="Label4" runat="server" Font-Bold="True" Text="Copyright @e_Libarary"></asp:Label>
+
+        </footer>
+    </form>
+</body>
+</html>
