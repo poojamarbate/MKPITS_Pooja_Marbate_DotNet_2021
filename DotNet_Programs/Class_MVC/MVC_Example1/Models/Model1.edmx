@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="myDB_SQLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Grocery_Category">
+          <Key>
+            <PropertyRef Name="CatID" />
+          </Key>
+          <Property Name="CatID" Type="int" Nullable="false" />
+          <Property Name="Catname" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Grocery_Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Productname" Type="varchar" MaxLength="40" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="mfd" Type="date" />
+          <Property Name="Catid" Type="int" />
+        </EntityType>
+        <EntityType Name="person_details">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CustomerName" Type="varchar" MaxLength="50" />
+          <Property Name="ContactName" Type="varchar" MaxLength="30" />
+          <Property Name="Address" Type="varchar" MaxLength="30" />
+          <Property Name="City" Type="varchar" MaxLength="30" />
+          <Property Name="PostalCode" Type="int" />
+          <Property Name="Country" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="Shop_category">
+          <Key>
+            <PropertyRef Name="CatID" />
+          </Key>
+          <Property Name="CatID" Type="int" Nullable="false" />
+          <Property Name="Catname" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityType Name="Shop_product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="int" Nullable="false" />
+          <Property Name="ProductName" Type="varchar" MaxLength="40" />
+          <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="MDF" Type="date" />
+          <Property Name="CatID" Type="int" />
+        </EntityType>
+        <Association Name="FK__Shop_prod__CatID__0A688BB1">
+          <End Role="Shop_category" Type="Self.Shop_category" Multiplicity="0..1" />
+          <End Role="Shop_product" Type="Self.Shop_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shop_category">
+              <PropertyRef Name="CatID" />
+            </Principal>
+            <Dependent Role="Shop_product">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="myDB_SQLModelStoreContainer">
+          <EntitySet Name="Grocery_Category" EntityType="Self.Grocery_Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Grocery_Product" EntityType="Self.Grocery_Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="person_details" EntityType="Self.person_details" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Shop_category" EntityType="Self.Shop_category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Shop_product" EntityType="Self.Shop_product" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Shop_prod__CatID__0A688BB1" Association="Self.FK__Shop_prod__CatID__0A688BB1">
+            <End Role="Shop_category" EntitySet="Shop_category" />
+            <End Role="Shop_product" EntitySet="Shop_product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="myDB_SQLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Grocery_Category">
+          <Key>
+            <PropertyRef Name="CatID" />
+          </Key>
+          <Property Name="CatID" Type="Int32" Nullable="false" />
+          <Property Name="Catname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Grocery_Product">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Productname" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="mfd" Type="DateTime" Precision="0" />
+          <Property Name="Catid" Type="Int32" />
+        </EntityType>
+        <EntityType Name="person_details">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+          </Key>
+          <Property Name="CustomerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ContactName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="PostalCode" Type="Int32" />
+          <Property Name="Country" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Shop_category">
+          <Key>
+            <PropertyRef Name="CatID" />
+          </Key>
+          <Property Name="CatID" Type="Int32" Nullable="false" />
+          <Property Name="Catname" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Shop_product" Relationship="Self.FK__Shop_prod__CatID__0A688BB1" FromRole="Shop_category" ToRole="Shop_product" />
+        </EntityType>
+        <EntityType Name="Shop_product">
+          <Key>
+            <PropertyRef Name="ProductID" />
+          </Key>
+          <Property Name="ProductID" Type="Int32" Nullable="false" />
+          <Property Name="ProductName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Price" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="MDF" Type="DateTime" Precision="0" />
+          <Property Name="CatID" Type="Int32" />
+          <NavigationProperty Name="Shop_category" Relationship="Self.FK__Shop_prod__CatID__0A688BB1" FromRole="Shop_product" ToRole="Shop_category" />
+        </EntityType>
+        <Association Name="FK__Shop_prod__CatID__0A688BB1">
+          <End Role="Shop_category" Type="Self.Shop_category" Multiplicity="0..1" />
+          <End Role="Shop_product" Type="Self.Shop_product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Shop_category">
+              <PropertyRef Name="CatID" />
+            </Principal>
+            <Dependent Role="Shop_product">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="myDB_SQLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Grocery_Category" EntityType="Self.Grocery_Category" />
+          <EntitySet Name="Grocery_Product" EntityType="Self.Grocery_Product" />
+          <EntitySet Name="person_details" EntityType="Self.person_details" />
+          <EntitySet Name="Shop_category" EntityType="Self.Shop_category" />
+          <EntitySet Name="Shop_product" EntityType="Self.Shop_product" />
+          <AssociationSet Name="FK__Shop_prod__CatID__0A688BB1" Association="Self.FK__Shop_prod__CatID__0A688BB1">
+            <End Role="Shop_category" EntitySet="Shop_category" />
+            <End Role="Shop_product" EntitySet="Shop_product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="myDB_SQLModelStoreContainer" CdmEntityContainer="myDB_SQLEntities">
+          <EntitySetMapping Name="Grocery_Category">
+            <EntityTypeMapping TypeName="myDB_SQLModel.Grocery_Category">
+              <MappingFragment StoreEntitySet="Grocery_Category">
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+                <ScalarProperty Name="Catname" ColumnName="Catname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Grocery_Product">
+            <EntityTypeMapping TypeName="myDB_SQLModel.Grocery_Product">
+              <MappingFragment StoreEntitySet="Grocery_Product">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Productname" ColumnName="Productname" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="mfd" ColumnName="mfd" />
+                <ScalarProperty Name="Catid" ColumnName="Catid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="person_details">
+            <EntityTypeMapping TypeName="myDB_SQLModel.person_details">
+              <MappingFragment StoreEntitySet="person_details">
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+                <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_category">
+            <EntityTypeMapping TypeName="myDB_SQLModel.Shop_category">
+              <MappingFragment StoreEntitySet="Shop_category">
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+                <ScalarProperty Name="Catname" ColumnName="Catname" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Shop_product">
+            <EntityTypeMapping TypeName="myDB_SQLModel.Shop_product">
+              <MappingFragment StoreEntitySet="Shop_product">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="MDF" ColumnName="MDF" />
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

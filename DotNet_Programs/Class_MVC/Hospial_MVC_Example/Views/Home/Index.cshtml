@@ -1,0 +1,20 @@
+﻿@model Hospial_MVC_Example.Models.Student
+@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/NewLayout.cshtml";
+}
+<h2>Index</h2>
+<h2>mobile brands</h2>
+<ul>
+    @foreach (string b in ViewBag.Brandnames)
+    {
+                <li>@b</li>
+            }
+</ul>
+<h2>Names of students</h2>
+<ul>
+    @foreach(var e in ViewBag.StudentNames)
+            {
+                <li>@e.firstname @e.lastname</li>
+            }
+</ul>
