@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Precedence_Of_Operator", "Precedence_Of_Operator.csproj", "{48815A3D-AF99-42A4-97E1-0E3C4BA20485}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48815A3D-AF99-42A4-97E1-0E3C4BA20485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48815A3D-AF99-42A4-97E1-0E3C4BA20485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48815A3D-AF99-42A4-97E1-0E3C4BA20485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48815A3D-AF99-42A4-97E1-0E3C4BA20485}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A1138C2-0673-4B9D-AF4D-3A34EFDAAECC}
+	EndGlobalSection
+EndGlobal
