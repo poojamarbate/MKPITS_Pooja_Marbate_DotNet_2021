@@ -241,32 +241,6 @@ namespace Hotel_Management_Project_Based_OnSwitchCase
 
             Console.WriteLine("\n\nThanking You");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             Console.ReadLine();
         }
     }
