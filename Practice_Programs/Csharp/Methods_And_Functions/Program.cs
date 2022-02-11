@@ -31,6 +31,18 @@ namespace Methods_And_Functions
         {
             Console.WriteLine("Your name is: "+name);
         }
+
+
+        public static void ShowNameAge(string name,int age)
+        {
+            Console.WriteLine("Your name is :"+name+"\nyour age is: "+age);
+        }
+
+        public static int Multi(int a, int b)
+        {
+            return a * b;
+        }
+
         static void Main(string[] args)
         {
             /* Methods:Group of statements that together perform a task.
@@ -44,13 +56,13 @@ namespace Methods_And_Functions
 
             //method call
 
-            //Program p = new Program();//contructor
-            //p.Show();
+            Program p = new Program();//contructor
+            p.Show();
 
 
             Program.Result();//static method call
-                             //no need to create object
-                             //at the time of call it call with class name
+            //no need to create object
+            //at the time of call it call with class name
 
 
 
@@ -59,7 +71,7 @@ namespace Methods_And_Functions
 
             Console.WriteLine("Enter second number");
             int b = int.Parse(Console.ReadLine());
-            Program.Add(a,b);//arguments
+            Program.Add(a, b);//arguments
 
 
             Console.WriteLine("Enter your name");
@@ -68,6 +80,18 @@ namespace Methods_And_Functions
             //it take default value
             //optinal parameter
             Program.Showname();
+
+
+
+            //Program.ShowNameAge(age:23,name:"Pooja");//named arguments
+            /*
+             * there are three ways to specfie arguments
+             * 1)position vice
+             * 2)name vice
+             * 3)default
+             */
+
+            Program.Multi(4, 8);
             Console.ReadLine();
 
         }
