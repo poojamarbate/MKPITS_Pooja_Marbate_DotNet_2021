@@ -64,7 +64,7 @@ namespace C_Dec4_Collections
             mystack.Push(78.98m);
             mystack.Push(7000.67m);
             mystack.Push("12/12/21");
-            //last in First out
+            //last in First out(LIFO)
             Console.WriteLine(mystack.Pop());
             Console.WriteLine(mystack.Pop());
             Console.WriteLine(mystack.Peek());//to see only and not remove the top items
