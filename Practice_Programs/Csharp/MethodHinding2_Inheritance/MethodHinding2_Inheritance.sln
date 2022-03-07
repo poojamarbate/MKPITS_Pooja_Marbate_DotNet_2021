@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MethodHinding2_Inheritance", "MethodHinding2_Inheritance.csproj", "{DC5AB7FF-416C-44A9-8CA8-3D45AD2C164F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC5AB7FF-416C-44A9-8CA8-3D45AD2C164F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5AB7FF-416C-44A9-8CA8-3D45AD2C164F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5AB7FF-416C-44A9-8CA8-3D45AD2C164F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5AB7FF-416C-44A9-8CA8-3D45AD2C164F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C67E028C-56FE-418A-A9B7-02C2002DA3C4}
+	EndGlobalSection
+EndGlobal
