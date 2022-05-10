@@ -34,16 +34,17 @@ namespace Inheritance_In_Csharp
     {
         static void Main(string[] args)
         {
-            PermanentEmployee p = new PermanentEmployee();
-            p.EmpId = 3;
+           PermanentEmployee p = new PermanentEmployee();
+           p.EmpId = 3;
             
             VistingEmployee v = new VistingEmployee();
             v.Empname = "Rajveer";
 
             Console.WriteLine(p.EmpId);
-            p.Show();
-            Console.WriteLine(v.Empname);
+              p.Show();
+             Console.WriteLine(v.Empname);
 
+           
             Console.ReadLine();
         }
     }
